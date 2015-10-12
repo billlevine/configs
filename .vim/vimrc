@@ -1,0 +1,12 @@
+filetype plugin on
+syntax on
+colorscheme ron
+set tabstop=2
+set expandtab
+set clipboard=unnamedplus
+
+au FileType stk call PareditInitBuffer()
+execute pathogen#infect()
+
+" tslime
+let g:tslime_ensure_trailing_newlines = 1
