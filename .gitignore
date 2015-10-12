@@ -1,0 +1,14 @@
+# Ignore everything
+*
+
+# But not these files...
+!.gitignore
+!.tmux.conf
+!./.tmux/plugins/
+!./.vim/*
+!.vimrc
+# etc...
+
+# ...even if they are in subdirectories
+!*/
+
