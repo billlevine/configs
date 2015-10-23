@@ -4,9 +4,13 @@ colorscheme ron
 set tabstop=2
 set expandtab
 set clipboard=unnamedplus
+set textwidth=80
 
 au FileType stk call PareditInitBuffer()
 execute pathogen#infect()
 
 " tslime
 let g:tslime_ensure_trailing_newlines = 1
+match ErrorMsg '\s\+$'
+nnoremap <Leader>rtw :%s/\s\+$//e<CR>
+
